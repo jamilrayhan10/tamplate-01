@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+/* =====================header area css ======================*/
+.header {
+  background: #fcfafa;
+  padding-bottom: 50px;
+}
+
+.togglemenu i {
+  font-size: 35px;
+  display: none;
+}
+
+.menubar ul {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.menubar ul li a {
+  color: orangered;
+}
+
+.menubar ul li a:hover {
+  color: black;
+}
+
+.rightside {
+  margin-left: 10%;
+  margin-top: 50px;
+}
+
+.rightside h2 {
+  font-size: 50px;
+  padding-top: 80px;
+}
+
+.rightside p {
+  padding: 10px 0px;
+}
+
+.rightside button {
+  padding: 10px 30px;
+  outline: none;
+  border: 1px solid #ddd;
+  text-transform: uppercase;
+  background: -webkit-gradient(linear, left bottom, left top, from(#3d4ff3), to(#8e99fc));
+  background: linear-gradient(to top, #3d4ff3, #8e99fc);
+  border-radius: 10px;
+  color: #fff;
+}
+
+.rightside button:hover {
+  background: #0119f5;
+}
+
+.rightside button i {
+  margin-right: 5px;
+}
+
+@media (max-width: 990px) {
+  .logo {
+    width: 300px;
+  }
+  .togglemenu i {
+    display: block;
+    margin-top: -30px;
+  }
+  .menubar {
+    display: none;
+  }
+  .menubar ul {
+    display: block;
+  }
+  .rightside h2 {
+    font-size: 45px;
+    font-weight: bolder;
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 540px) {
+  .logo {
+    width: 250px;
+  }
+}
+
+/* =====================singelshoes area css ======================*/
+.singelshoes {
+  border: 1px solid #e6e6e6;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 25px;
+}
+
+.singelshoes:hover {
+  -webkit-box-shadow: 0px 0px 15px 2px #ddd;
+          box-shadow: 0px 0px 15px 2px #ddd;
+}
+
+.singelshoes .shoes {
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  background-color: #e5e5e5;
+  border-radius: 10px;
+  position: relative;
+}
+
+.singelshoes .shoes img {
+  width: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.singelshoes .shoesdetailes h3 {
+  text-transform: capitalize;
+  padding-top: 8px;
+}
+
+.singelshoes .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.singelshoes .price p {
+  color: red;
+  font-weight: bolder;
+  font-size: 35px;
+}
+
+.singelshoes .price button {
+  padding: 10px 30px;
+  outline: none;
+  border: 1px solid #ddd;
+  text-transform: uppercase;
+  background: -webkit-gradient(linear, left bottom, left top, from(#3d4ff3), to(#8e99fc));
+  background: linear-gradient(to top, #3d4ff3, #8e99fc);
+  border-radius: 10px;
+  color: #fff;
+}
+
+.singelshoes .price button:hover {
+  background: #0119f5;
+}
+
+.singelshoes .price button i {
+  margin-right: 5px;
+}
+
+/* =====================img detalies area css ======================*/
+.imgdetailes {
+  margin: 50px 0px;
+}
+
+.singelimgdetailes {
+  border: 1px solid #ddd;
+  padding: 10px 5px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 15px;
+}
+
+.singelimgdetailes:hover {
+  -webkit-box-shadow: 0 0 10px 2px #ddd;
+          box-shadow: 0 0 10px 2px #ddd;
+}
+
+.singelimgdetailes img {
+  width: 50px;
+}
+
+.singelimgdetailes .imgdetails {
+  margin-left: 20px;
+}
+
+.singelimgdetailes .imgdetails h5 {
+  font-size: 18px;
+}
+
+.rightimg {
+  margin-left: 50px;
+  margin-top: 15px;
+}
+
+.footerarea {
+  background-color: #e5e5e5;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.formarea h4 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.formarea input {
+  display: inline-block;
+  padding: 10px;
+  margin-top: 5px;
+  outline: none;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  width: 100%;
+  background-color: transparent;
+}
+
+.formarea textarea {
+  display: inline-block;
+  padding: 10px;
+  margin-top: 5px;
+  outline: none;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  width: 100%;
+  background-color: transparent;
+}
+
+.formarea button {
+  padding: 7px 40px;
+  outline: none;
+  border: 1px solid #ddd;
+  text-transform: uppercase;
+  background: -webkit-gradient(linear, left bottom, left top, from(#353c7c), to(#7784f8));
+  background: linear-gradient(to top, #353c7c, #7784f8);
+  border-radius: 10px;
+  color: #fff;
+  font-size: 24px;
+  margin-top: 7px;
+}
+
+.formarea button:hover {
+  background: #9393ff;
+}
+/*# sourceMappingURL=index.css.map */
